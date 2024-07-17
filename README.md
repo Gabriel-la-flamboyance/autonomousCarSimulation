@@ -32,40 +32,51 @@ Install the required packages using pip:
 
 ## Detecting lanes
 Here we first detect the contours, which consists in identifying the sudden changes of intensity in the adjacent pixels. 
+![image](https://github.com/user-attachments/assets/1565093b-2b9e-4479-98be-e7d7fbc12770)
 
 
 Put the image in black is white for ease of processing mages and be fast
+![image](https://github.com/user-attachments/assets/9fded69d-521c-4b5e-9d1c-35739634a00f)
 
 Here we remove the noise in the image with a 5x5 Gaussian filter. This also allows a good visualization of our elements.
+![image](https://github.com/user-attachments/assets/8813e34d-6e1e-4496-b083-8d460c962d31)
 
 
 Here we isolate a part of our image, in this case, the road.
 
 With matplotlib, we put the image on a graph, then with the graphic coordinates, we isolate the part that interests us.  
 As if by triangulation, we have an area of interest that is isolated. 
-)
+![image](https://github.com/user-attachments/assets/b4842cde-050d-4237-9516-bebcf4e9dc43)
+![image](https://github.com/user-attachments/assets/cc6830bd-acaa-4dda-af82-33dd67eacaa9)
+
 
 
 ## Training the model
 
 ### The architecture of the implementation
 In this step we change the method of working to train a car on the circuit and not just follow a line.
+![image](https://github.com/user-attachments/assets/4d78a843-b7cc-44b7-ad50-0c7ea8f8e93f)
+![image](https://github.com/user-attachments/assets/b50d6e74-7e80-417e-b47c-318bd9e78839)
 
 
 ### Udacity platform
+![image](https://github.com/user-attachments/assets/49227acc-9b29-4be0-af5c-6bf4a4dde370)
 
 
 #### Autonomous driving simulation
+![image](https://github.com/user-attachments/assets/ba4bb04d-ae7e-47dc-8ae4-ff003ee35a6a)
 
 
 We drive the car for training and the camera on the car takes photos of the track it sees (so we have to drive correctly, otherwise, garbage in, garbage out). 
+![image](https://github.com/user-attachments/assets/bbdb696d-acfe-498b-be8e-e031d8259421)
+
 
 
 Photos of the car on any side of the track
+![image](https://github.com/user-attachments/assets/0337d4ba-c624-4517-bc37-6e779d7c2762)
 
 
 #### Preprocessing and image augmentation
-
 
 - Crop the images in the dataset have relevant characteristics in the lower part where the route is visible. 
 
