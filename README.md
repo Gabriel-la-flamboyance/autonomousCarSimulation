@@ -77,6 +77,7 @@ Photos of the car on any side of the track
 
 
 #### Preprocessing and image augmentation
+![image](https://github.com/user-attachments/assets/0691d259-4db6-480b-9d45-1addd909a775)
 
 - Crop the images in the dataset have relevant characteristics in the lower part where the route is visible. 
 
@@ -90,6 +91,7 @@ To take into account the distortion effect in the camera while capturing the ima
 
 #### Data Filtering
 
+![image](https://github.com/user-attachments/assets/cf15afb5-e1f1-42ff-af20-3df765a8d5f9)
 
 Here, we will filter the images to keep the images where the car is in the middle of the road.   
 I consider that tight to the left of the road = -1 , remains in the middle 0 and tight to the right = 1. 
@@ -98,9 +100,9 @@ So I filter to only have the data of the car when it is in the middle of the roa
 
 ## Results
 After 4 hours of training
-<video controls src="Après 4h d’entrainement-1.mp4" title="Title"></video>
 
-After 36 hours of Training 
-<video controls src="Après 36h d’entrainement-1.mp4" title="Title"></video> 
 
-Still a lot to do on tris project. 
+https://github.com/user-attachments/assets/1f66dafa-94a1-45fc-836e-0bfff78f8431
+
+Still a lot to do on tris project.
+See full project on : https://drive.google.com/file/d/10d5E4V8jDWo2UOTWD-eArOmDa9GD94BB/view?usp=sharing.
